@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1422050134 source:/home/jamianv/Cplusplus files/Roman Numerals/main.cpp
+	<iostream>
+
+1422050667 source:/home/jamianv/Cplusplus files/Roman Numerals/romanType.cpp
+	<string>
+	<iostream>
+	"romanType.h"
+
+1422050667 /home/jamianv/Cplusplus files/Roman Numerals/romanType.h
+	<string>
+
