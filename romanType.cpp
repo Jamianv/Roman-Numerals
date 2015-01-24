@@ -17,32 +17,32 @@ void romanType::setArabic(int arabNum){
 }
 
 void romanType::convert(){
-    int angka[10];
+    int romArray[10];
     int maximum;
     int romSize = romanNumeral.length()-1;
     for(int i = romSize; i >= 0; i--){
         if(romanNumeral.at(i) == 'I')
-            angka[i] = 1;
+            romArray[i] = 1;
         if(romanNumeral.at(i) == 'V')
-            angka[i] = 5;
+            romArray[i] = 5;
         if(romanNumeral.at(i) == 'X')
-            angka[i] = 10;
+            romArray[i] = 10;
         if(romanNumeral.at(i) == 'L')
-            angka[i] = 50;
+            romArray[i] = 50;
         if(romanNumeral.at(i) == 'C')
-            angka[i] = 100;
+            romArray[i] = 100;
         if(romanNumeral.at(i) == 'D')
-            angka[i] = 500;
+            romArray[i] = 500;
         if(romanNumeral.at(i) == 'M')
-            angka[i] = 1000;
+            romArray[i] = 1000;
     }
-    maximum = angka[romSize];
+    maximum = romArray[romSize];
     arabicNumeral = maximum;
     for(int i = romSize - 1; i >= 0; i--){
-        if(angka[i] > maximum)
-            arabicNumeral += angka[i];
+        if(romArray[i] > maximum)
+            arabicNumeral += romArray[i];
         else
-            arabicNumeral -= angka[i];
+            arabicNumeral -= romArray[i];
     }
 }
 
